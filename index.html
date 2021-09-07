@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <meta charset="UTF-8">
+        <title>初めてのHTML</title>
+        <meta name="description" content ="HTMLについての勉強をしてみたページです">
+        <meta name="keywords" content="HTML,Study,画像挿入,初心者">
+        <link rel="stylesheet" href="./index.css" type="text/css"><!--index.css読み込み-->
+        <!--
+            metaタグとは
+            その文書に関する情報（メタ情報）を指定して、 ブラウザや検索ロボットに知らせるためのタグです。
+            title: ブラウザのツールバーに表示するタイトルを指定します。
+            description: その文書の説明を書きます。
+            keyword: その文書のキーワードとなる文字を書きます。
+            link: 様々なリソースと結びつける働きをします。
+        -->
+    </head>
+    <body>
+
+        <div id ="top"></div> <!-- リンク先に指定できる -->
+
+        <!-- hタグとは　-->
+        <h1>h1タグ</h1>
+        <div class="content">
+            <h2>h2タグ</h2>
+            <h3>h3タグ</h3>
+            <h4>h4タグ</h4>
+            <h5>h5タグ</h5>
+            <h6>h6タグ</h6>
+        </div>
+        <hr><!-- 羅線 -->
+
+        <!-- pタグとは-->
+        <h1>pタグとは</h1>
+        <p>pタグとは、パラグラフの略です。<br>pタグで囲まれた部分が文章の段落の一つである事を示します。</p>
+
+        <!-- imgタグ-->
+        <hr>
+        <h1>imgタグとは</h1>
+        <p>imgタグとは、画像を表示するタグです。</p>
+        <img src="/Users/hiro/Documents/sawabe/IMG_0078.jpg">
+
+        <!-- strongタグについての説明(bも使える)-->
+        <hr>
+        <h1>strongタグとは</h1>
+        <p>strongタグとは、文字を強調してくれます。bタグも文字を太くします。</p>
+        <p>例) <strong>バナナ</strong>が大好きなんです。</p>
+        <p>例) <b>太字にしたい文字</b></p>
+        <p>SEO対策を考えると<strong>strongタグ</strong>が効率的です。</p>
+
+        <!-- ul,ol,liタグについての説明 -->
+        <hr>
+        <h1>ul ol liタグとは</h1>
+        <p>liタグはolもしくはulの直下にのみ書くことが出来ます。<br>
+        また、このサンプルソースの場合のliタグをolタグの子要素といい、olをliの親要素と呼びます。</p>
+        <h3>ulタグ</h3>
+        <ul>
+            <li>順序のない</li>
+            <li>リストに</li>
+            <li>使います</li>
+        </ul>
+
+        <h3>olタグ</h3>
+        <ol>
+            <li>順序のある</li>
+            <li>リストに</li>
+            <li>使います</li>
+        </ol>
+
+        <!-- table tr th td タグについての説明 -->
+        <hr>
+        <h1>table tr th tdタグとは</h1>
+        <p>table tr th tdタグは、表を作成作成するためのタグです</p>
+        <table><!--テーブル全体-->
+            <tr><!--テーブルの行-->
+                <th></th>
+                <th>バナナの出荷量</th>
+                <th>ピーチの出荷量</th>
+            </tr>
+            <tr>
+                <th>2030年</th><!--テーブルのヘッダー部分のセルの内容-->
+                <td>5t</td>
+                <td>3t</td>
+            </tr>
+            <tr>
+                <th>2035年</th><!--テーブルのセルの内容-->
+                <td>10t</td>
+                <td>2t</td>
+            </tr>
+            <tr>
+                <th>2040年</th>
+                <td>15t</td>
+                <td>1t</td>
+            </tr>
+        </table>
+
+        <!-- div spanタグについての説明-->
+        <hr>
+        <h1>div spanタグとは</h1>
+        <p>
+            div spanタグとは、まとまりを作るためのタグです。<br>
+            今はこれといって意味がありませんが、CSSを勉強する時に大きな役割を果たします。
+        </p>
+
+        <div>
+            div: ブロック要素 （改行される）
+            <div>見出し、段落など文書を構成する基本要素となるものです。</div>
+            ブロック要素の内容モデルには、別のブロック要素やインライン要素を含むことができますが、<br>
+            逆にインライン要素の中にブロック要素を置くことはできません。
+        </div>
+        <br>
+
+        <div>
+            span: インライン要素 (改行されない)<br>
+            <span>主としてブロック要素の内容として用いられるもので、文書の構造を構成するというより、</span><br>
+            ブロック要素内の特定の部分になんらかの役割や機能を持たせる要素です。
+        </div>
+
+        <!-- aタグについての説明 -->
+        <hr>
+        <h1>aタグとは</h1>
+        <p>
+            主にページ遷移をするときに用いるタグです。<br>
+            ＜(タグ名) (属性名)="(値)" >(中身)＜/(タグ名)＞<br>
+            href: リンク先<br>
+            target: リンク先の文書を表示させる方法を指定  "_blank"...別タブで開く<br>
+            <a href="./index2.html">index2へ</a>
+            <br>
+            <a href="./sample/index.html" target="_blank">sampleフォルダーのindexへ</a>
+            <br>
+            <a href="http://www.google.com">google topへ</a>
+            <br>
+            <a href="#top">topへ</a> <!-- 19行目のリンクに飛べる-->
+        </p>
+
+    </body>
+</htmL>
